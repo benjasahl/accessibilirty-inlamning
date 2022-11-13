@@ -1,0 +1,140 @@
+.about-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-header p {
+  position: absolute;
+  left: 2rem;
+  color: #d7d8cc;
+}
+
+#return {
+  cursor: pointer;
+  color: #d7d8cc;
+  text-decoration: underline;
+}
+
+#current {
+  font-weight: bold;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.about-wrapper {
+  border-radius: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 30%;
+  background-color: #424339;
+  padding-top: 1rem;
+}
+
+.about-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-box img {
+  height: 154px;
+}
+
+.about-box h2 {
+  padding: 0;
+  margin-top: 0;
+}
+
+.about-box p {
+  width: 90%;
+}
+
+.read-more {
+  height: 2.8rem;
+  width: 100%;
+  background-color: #d7d8cc;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  color: #292d2c;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.read-more:hover {
+  border: 2px solid #292d2c;
+  cursor: pointer;
+  transition: 0.05s;
+}
+
+.about-goal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#goal-text {
+  text-align: left;
+  width: 40%;
+  margin: 1rem;
+}
+
+#goal-img {
+  margin-right: 10%;
+}
+
+@media screen and (max-width: 600px) {
+  .about-section {
+    flex-direction: column;
+  }
+  .about-wrapper {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  #about-link {
+    width: 80%;
+
+    margin-bottom: 1rem;
+  }
+  .read-more {
+    width: 80%;
+    height: 4rem;
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  .about-goal {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .about-goal img {
+    width: 80%;
+    margin-left: 1.4rem;
+  }
+  #goal-text {
+    font-size:22px;
+    width: 90%;
+    margin-left: 1.4rem;
+  }
+  .about-header {
+    flex-direction: column;
+  }
+  .about-header p {
+    position: relative;
+    left: 0;
+    font-size:22px;
+  }
+  #text-wrapper {
+    font-size: 22px;
+  }
+}
